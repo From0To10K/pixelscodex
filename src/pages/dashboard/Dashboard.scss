@@ -1,0 +1,33 @@
+.dashboard-cube-300 {
+  min-height: 300px;
+}
+
+.btn-update {
+
+  transition: 200ms color linear;
+
+  &:hover {
+    color: #37b81b;
+    cursor: pointer;
+  }
+}
+
+h4 {
+  font-size: 16px;
+}
+
+.toggle-link:hover {
+  cursor: pointer;
+}
+
+.link-donation {
+  color: #FFF;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  padding: 15px;
+}
+
+.build-love {
+  margin-right: 5px;
+}

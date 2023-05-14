@@ -1,0 +1,15 @@
+.item-link {
+  color: #FFF;
+
+  &:hover {
+    color: rgb(255, 243, 164);
+  }
+}
+
+.no-item-found {
+  text-align: center;
+}
+
+.name-column {
+  max-width: 150px;
+}

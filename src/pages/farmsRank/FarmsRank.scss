@@ -1,0 +1,61 @@
+.table-items {
+  tbody {
+    td:first-child {
+      width: 30px;
+    }
+  }
+}
+
+.filter-btn-list {
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+}
+
+$jobBase : 4;
+$jobText : hsl(4, 0%, 90%);
+$jobCase : hsla(4, 15%, 15%, 0.25);
+$jobHover : hsla(85,  100%, 24%, 0.95) ;
+$jobBorder : hsla(4, 0%, 85%, 0.99);
+$jobBorderActive : hsla(85, 89%, 45%, 0.99);
+
+.btn-filter {
+
+  .jobs-filter {
+    opacity: 1;
+    display: flex;
+    transition: all 0.1s ease 0s;
+    touch-action: manipulation;
+    user-select: none;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 0.875rem; margin-left: auto;
+
+    .text-filter {
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      font-size: 0.85rem;
+    }
+  }
+
+  // Job no selected
+
+  .job-no-selected, .job-active {
+    background-color: $jobCase;
+    border: 1px solid $jobBorder;
+
+    &:hover { background-color: $jobHover; }
+    .text-filter { color: $jobText; }
+  }
+
+  .job-active {
+    background-color: $jobHover;
+    border-color: $jobBorderActive;
+  }
+}

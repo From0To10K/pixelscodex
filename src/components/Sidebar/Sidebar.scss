@@ -1,0 +1,17 @@
+.sidebar-submenu {
+  .active {
+
+    span {
+      color: #ffffff;
+      text-shadow:0 0 10px rgba(22, 199, 255, 0.5);
+    }
+
+    :before {
+      color: #16c7ff;
+    }
+  }
+}
+
+.build-love {
+  color: red;
+}

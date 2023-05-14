@@ -1,0 +1,24 @@
+.img-job {
+  margin-right: 15px;
+  -ms-interpolation-mode: nearest-neighbor;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+tr {
+  td:first-child {
+    text-align: center;
+  }
+}
+
+.item-link {
+  color: #FFF;
+
+  &:hover {
+    color: rgb(255, 243, 164);
+  }
+}
+
+.no-item-found {
+  text-align: center;
+}

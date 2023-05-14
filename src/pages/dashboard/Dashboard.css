@@ -1,0 +1,13 @@
+.dashboard-cube-300 {
+  min-height: 300px;
+}
+
+.btn-update {
+  transition: 200ms color linear;
+}
+.btn-update:hover {
+  color: #37b81b;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=Dashboard.css.map */

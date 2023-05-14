@@ -1,0 +1,60 @@
+.table-items {
+  img {
+    height: 40px;
+    max-width: 55px;
+  }
+
+  tbody {
+    tr {
+      td {
+        vertical-align: middle;
+      }
+    }
+
+    td:first-child {
+      width: 75px;
+    }
+  }
+}
+
+img .img-recipe {
+  width: 40px;
+  max-width: 40px;
+}
+
+.item-recipe {
+  img {
+    width: 45px;
+  }
+
+  .item-link {
+    margin-left: 5px;
+  }
+}
+
+.img-item-header {
+  width: 80px;
+}
+
+.img-recipe-bot {
+  max-height: 30px;
+  max-width: 30px;
+  margin-right: 10px;
+}
+
+.navbar-top {
+  a {
+    height: 45px;
+    padding: 5px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 0 10px;
+    color: #FFF;
+  }
+  clear: both;
+}
+
+.item-recipe-list {
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+}

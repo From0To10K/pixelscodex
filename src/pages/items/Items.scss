@@ -1,0 +1,204 @@
+.table-items {
+  img {
+    height: 40px;
+    max-width: 55px;
+  }
+
+  tbody {
+    tr {
+      td {
+        vertical-align: middle;
+      }
+    }
+
+    td:first-child {
+      width: 75px;
+    }
+  }
+}
+
+
+.list-group-item-dark {
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.from-group-commission {
+  background-color: rgb(30, 32, 38);
+
+  .form-control, .input-group-text {
+    background-color: rgb(42, 45, 53);
+    border-color: #1d1f27;
+
+    font-size: 14px !important;
+    color: #6d8e9c;
+  }
+
+
+  .cc-input-text {
+    color: #FFF;
+    font-weight: bold;
+    text-align: left;
+
+    &:hover {
+      border-color: rgb(240, 180, 11);
+    }
+
+    &:focus {
+      background-color: rgb(42, 45, 53);
+      border-color: #ff80ff;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(255, 100, 255, 0.5);
+      color: #FFF;
+      font-weight: bold;
+    }
+
+    &:disabled {
+      &:hover {
+        border-color: #1d1f27;
+      }
+    }
+  }
+}
+
+.filter-btn-list {
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+}
+
+$woodworkingBase : 34;
+$woodworkingText : hsl($woodworkingBase, 100%, 74%);
+$woodworkingCase : hsla(($woodworkingBase - 4), 70%, 24%, 0.25);
+$woodworkingCaseHover : hsla(($woodworkingBase - 4), 100%, 24%, 0.95) ;
+$woodworkingBorder : hsla($woodworkingBase, 100%, 35%, 0.99);
+$woodworkingBorderActive : hsla($woodworkingBase, 90%, 45%, 0.99);
+
+$farmingBase : 90;
+$farmingText : hsl($farmingBase, 100%, 74%);
+$farmingCase : hsla(($farmingBase - 4), 70%, 24%, 0.25);
+$farmingCaseHover : hsla(($farmingBase - 4), 100%, 24%, 0.95) ;
+$farmingBorder : hsla($farmingBase, 100%, 35%, 0.99);
+$farmingBorderActive : hsla($farmingBase, 89%, 45%, 0.99);
+
+$cookingBase : 58;
+$cookingText : hsl($cookingBase, 100%, 74%);
+$cookingCase : hsla(($cookingBase - 4), 70%, 24%, 0.25);
+$cookingCaseHover : hsla(($cookingBase - 4), 100%, 24%, 0.95) ;
+$cookingBorder : hsla($cookingBase, 100%, 35%, 0.99);
+$cookingBorderActive : hsla($cookingBase, 89%, 45%, 0.99);
+
+$ceramicistBase : 280;
+$ceramicistText : hsl($ceramicistBase, 100%, 74%);
+$ceramicistCase : hsla(($ceramicistBase - 4), 70%, 24%, 0.25);
+$ceramicistCaseHover : hsla(($ceramicistBase - 4), 100%, 24%, 0.95) ;
+$ceramicistBorder : hsla($ceramicistBase, 100%, 35%, 0.99);
+$ceramicistBorderActive : hsla($ceramicistBase, 89%, 45%, 0.99);
+
+$grangerBase : 175;
+$grangerText : hsl($grangerBase, 100%, 74%);
+$grangerCase : hsla(($grangerBase - 4), 70%, 24%, 0.25);
+$grangerCaseHover : hsla(($grangerBase - 4), 100%, 24%, 0.95) ;
+$grangerBorder : hsla($grangerBase, 100%, 35%, 0.99);
+$grangerBorderActive : hsla($grangerBase, 89%, 45%, 0.99);
+
+
+$colorTest : hsl(175, 100%, 74%);
+
+.btn-filter {
+
+  .jobs-filter {
+    opacity: 1;
+    display: flex;
+    transition: all 0.1s ease 0s;
+    touch-action: manipulation;
+    user-select: none;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 0.875rem; margin-left: auto;
+
+    .text-filter {
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      font-size: 0.85rem;
+    }
+  }
+
+  .job-woorkorking, .job-woorkorking-active {
+    background-color: $woodworkingCase;
+    border: 1px solid $woodworkingBorder;
+
+    &:hover { background-color: $woodworkingCaseHover; }
+    .text-filter { color: $woodworkingText; }
+  }
+
+  .job-woorkorking-active {
+    background-color: $woodworkingCaseHover;
+    border-color: $woodworkingBorderActive;
+  }
+
+  .job-farming, .job-farming-active {
+     background-color: $farmingCase;
+     border: 1px  solid $farmingBorder;
+
+     &:hover { background-color: $farmingCaseHover; }
+     .text-filter { color: $farmingText; }
+   }
+
+  .job-farming-active {
+    background-color: $farmingCaseHover;
+    border-color: $farmingBorderActive;
+  }
+
+  .job-woorkorking-active {
+    background-color: $woodworkingCaseHover;
+    border-color: $woodworkingBorderActive;
+  }
+
+  // Cooking
+  .job-cooking, .job-cooking-active {
+    background-color: $cookingCase;
+    border: 1px  solid $cookingBorder;
+
+    &:hover { background-color: $cookingCaseHover; }
+    .text-filter { color: $cookingText; }
+  }
+
+  .job-cooking-active {
+    background-color: $cookingCaseHover;
+    border-color: $cookingBorderActive;
+  }
+
+  // Ceramicist
+  .job-ceramicist, .job-ceramicist-active {
+    background-color: $ceramicistCase;
+    border: 1px  solid $ceramicistBorder;
+
+    &:hover { background-color: $ceramicistCaseHover; }
+    .text-filter { color: $ceramicistText; }
+  }
+
+  .job-ceramicist-active {
+    background-color: $ceramicistCaseHover;
+    border-color: $ceramicistBorderActive;
+  }
+
+  // Granger
+  .job-granger, .job-granger-active {
+    background-color: $grangerCase;
+    border: 1px  solid $grangerBorder;
+
+    &:hover { background-color: $grangerCaseHover; }
+    .text-filter { color: $grangerText; }
+  }
+
+  .job-granger-active {
+    background-color: $grangerCaseHover;
+    border-color: $grangerBorderActive;
+  }
+}
